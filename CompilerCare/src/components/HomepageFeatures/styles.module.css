@@ -1,0 +1,31 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .features {
+    padding: 1rem 0; /* Adjust padding for smaller screens */
+  }
+
+  .featureSvg {
+    height: 150px; /* Smaller SVG size on mobile */
+    width: 150px; /* Smaller SVG size on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .featureSvg {
+    height: 100px; /* Even smaller SVG size on extra small screens */
+    width: 100px; /* Even smaller SVG size on extra small screens */
+  }
+}
